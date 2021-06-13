@@ -12,8 +12,7 @@ $(document).ready(()=>{
     });
 
 function parseVaccine(data){
-   console.dir(data);
-   alert(0);
+  //console.dir(data);
    for (let i of data){
        let item=new grab(("991590042"),(i.report_date),(i.previous_day_doses_administered),
         (i.total_doses_administered),
@@ -23,10 +22,25 @@ function parseVaccine(data){
         localStorage.setItem(item.d,JSON.stringify(item));
 
     }
+    alert("Done");
+
 
 
 
 }
+$("#DisplayData").click(function(){
+    myArray=[];
+    console.log(localStorage.key(9));
+    for (var i=0; i<localStorage.length;i++){
+        console.log(localStorage.key(i));
+        myArray.push((localStorage.key(i)))
+
+
+    }
+    console.dir(myArray);
+    alert(9);
+})
+
 }
 );  
 
