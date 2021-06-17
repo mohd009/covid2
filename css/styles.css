@@ -1,3 +1,131 @@
-.vaccine{
-    border: 2px solid red;
+
+
+body{
+    background-image: url("../images/pic.jpeg");
+    background-position-x: -150px;
+
+    background-repeat: no-repeat;
+    background-size: 1000px,400px;
+
 }
+.grid{
+     display: grid;
+     
+  
+     grid-template-areas: 
+       'data  data  data    data'
+       'nFoot'
+       
+       '                   foot';
+}
+
+#main{
+
+    border: 2px solid purple;
+    text-align: center;
+    background-color: wheat;
+    color: brown
+    
+
+}
+
+header{
+
+    text-align: center;
+    border: 2px dotted yellow;;
+    background-color: wheat;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.scroll{
+    grid-area: data;
+    overflow: scroll;
+    height: 550px;
+    padding: 8px;
+  
+}
+#cov{
+    background-image:linear-gradient(to bottom, violet,grey);
+
+    color: rgb(255, 255, 0);
+    text-shadow: black 8px 4px 8px;
+    border: 2px solid grey;
+   
+}
+
+#title{
+    color: blue;
+    text-shadow: white 10px 6px 10px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+
+li{
+    color:teal;
+    font-weight: bold;
+    font-size: 18px;;
+background-image:linear-gradient(to bottom, wheat,grey);
+
+}
+#addo{
+    color: purple;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.dec{
+    
+    text-align: center;
+   
+}
+.lk{
+    background-color: green;
+    color:wheat;
+    border-radius: 13px;
+    height: 28px;
+}
+
+
+
+footer{
+    position:fixed;
+    top:700px;
+    grid-area: foot;
+    color: maroon;
+    background-image:linear-gradient(to bottom, violet,grey);
+
+    margin-top: 18px;
+    margin-left: 180px;
+    border: 2px dotted orange;
+    
+
+}
+@media screen and (orientation: landscape){
+
+
+    footer{
+        position: fixed;
+        margin-left: 5px;
+        margin-top: -500px;
+        background-image:linear-gradient(to bottom, orange,grey);
+
+        grid-area: foot;
+       
+
+    }
+    body{
+        background-image: url("../images/pic.jpeg");
+        background-position-x: -200px;
+        background-position-y: -180px;
+        background-repeat: repeat;
+        background-size: 1000px,400px;
+    
+    }
+   
+
+}
+    
